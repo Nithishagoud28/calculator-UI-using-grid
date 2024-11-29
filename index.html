@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent {
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: 80px 80px 80px 80px 80px 80px;
+            width: 400px;
+            justify-content: center;
+
+        }
+        .child {
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+        .output {
+            grid-column-start: 1;
+            grid-column-end: 5;
+            display: grid;
+            background-color: black;
+            padding-right: 30px;
+            align-content: center;
+            justify-content: end;
+            font-size: 50px;
+        }
+        .zero {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+        .div, button {
+            font-size: 30px;
+            border-radius: 10px;
+        }
+        .dark-gray {
+            background-color: darkgray;
+        }
+        .orange {
+            background-color: orange;
+        }
+        .light-gray {
+            background-color: light;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Calculator UI Using Grid</h1>
+    <div class="parent">
+    <div class="child output"></div>
+    <button class="a1 dark-gray">AC</button>
+    <button class="a2 dark-gray">+/-</button>
+    <button class="a3 dark-gray">%</button>
+    <button class="a4 orange">/</button>
+    <button class="a5 light-gray">7</button>
+    <button class="a6 light-gray">8</button>
+    <button class="a7 light-gray">9</button>
+    <button class="a8 orange">x</button>
+    <button class="a9 light-gray">4</button>
+    <button class="a10 light-gray">5</button>
+    <button class="a11 light-gray">6</button>
+    <button class="a12 orange">-</button>
+    <button class="a13 light-gray">1</button>
+    <button class="a14 light-gray">2</button>
+    <button class="a15 light-gray">3</button>
+    <button class="a16 orange">+</button>
+    <button class="a17 zero light-gray">0</button>
+    <button class="a18 light-gray">.</button>
+    <button class="a19 orange">=</button>
+    </div>
+    </div>
+</body>
+</html>
